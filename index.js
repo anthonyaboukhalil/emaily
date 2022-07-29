@@ -31,9 +31,7 @@ if (process.env.NODE_ENV === "production") {
   // if it doesn't recognize the route
   const path = require("path");
   app.get("*", (req, res) => {
-    res.sendFile(
-      "/Users/anthonyaboukhalil/Desktop/fullstack/server/client/build/index.html"
-    );
+    res.sendFile("/client/build/index.html");
   });
 }
 const PORT = process.env.PORT || 5000;
